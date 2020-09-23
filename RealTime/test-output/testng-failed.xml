@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="RealTime.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Valdating login(failed)">
+    <classes>
+      <class name="RealTime.HomePage">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="tearDown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- RealTime.HomePage -->
+    </classes>
+  </test> <!-- Valdating login(failed) -->
+  <test thread-count="5" name="Validate Navigate Bar(failed)">
+    <classes>
+      <class name="RealTime.Navigatebar">
+        <methods>
+          <include name="intialize"/>
+          <include name="validateNavigationbar"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- RealTime.Navigatebar -->
+    </classes>
+  </test> <!-- Validate Navigate Bar(failed) -->
+  <test thread-count="5" name="Validate Title(failed)">
+    <classes>
+      <class name="RealTime.validateTitle">
+        <methods>
+          <include name="intialize"/>
+          <include name="validateTitleOfIt"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- RealTime.validateTitle -->
+    </classes>
+  </test> <!-- Validate Title(failed) -->
+</suite> <!-- Failed suite [Suite] -->
